@@ -1,0 +1,10 @@
+Admin Credential
+-----------------
+username = administrator
+password = 12345
+
+
+employee Credential
+-----------------
+username =  midhlaj
+password = 12345
