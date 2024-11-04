@@ -1,0 +1,234 @@
+<!-- main/common/object_detail.html -->
+
+{% extends 'main/base.html' %}
+{% load static i18n crispy_forms_tags %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+
+<div class="content-wrapper">
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">{{title}}</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered detail-table">
+                
+                <tbody>
+
+                    <tr>  
+                        <th> ID </th>
+                        <td> {{object.employee_id}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> User </th>
+                        <td> {{object.user}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> First Name </th>
+                        <td> {{object.first_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Middle Name </th>
+                        <td> {{object.middle_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Last Name </th>
+                        <td> {{object.last_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Gender </th>
+                        <td> {{object.gender}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Marital Status </th>
+                        <td> {{object.marital_status}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Personal Email </th>
+                        <td> {{object.personal_email}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Mobile </th>
+                        <td> {{object.mobile}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Whatsapp </th>
+                        <td> {{object.whatsapp}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> DOB </th>
+                        <td> {{object.date_of_birth}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Religion </th>
+                        <td> {{object.religion}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Photo </th>
+                        <td> {{object.photo}} </td>
+                    </tr>
+                    
+                    <tr>  
+                        <th> Official Email </th>
+                        <td> {{object.official_email}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Department </th>
+                        <td> {{object.department}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Designation </th>
+                        <td> {{object.designation}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Father Name </th>
+                        <td> {{object.father_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Mother Name </th>
+                        <td> {{object.mother_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Guardian Name </th>
+                        <td> {{object.guardian_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Relationship With Employee </th>
+                        <td> {{object.relationship_with_employee}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> DOJ </th>
+                        <td> {{object.date_of_joining}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> DOC </th>
+                        <td> {{object.date_of_joining}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Residence Type </th>
+                        <td> {{object.type_of_residence}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Residential Name </th>
+                        <td> {{object.residence_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Residential Address </th>
+                        <td> {{object.residential_address}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Residence Contact </th>
+                        <td> {{object.residence_contact}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Residential Postal Code </th>
+                        <td> {{object.residential_postal_code}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Permanent Address </th>
+                        <td> {{object.permanent_address}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Permanent Postal Code </th>
+                        <td> {{object.permanent_postal_code}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Bank Name </th>
+                        <td> {{object.bank_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Account Name </th>
+                        <td> {{object.account_name}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Account Number </th>
+                        <td> {{object.account_number}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> IFSC Code</th>
+                        <td> {{object.ifsc_code}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Bank Branch </th>
+                        <td> {{object.bank_branch}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Pan Number </th>
+                        <td> {{object.pan_number}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Employment Type </th>
+                        <td> {{object.employment_type}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Blood Group </th>
+                        <td> {{object.blood_group}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Basic Salary </th>
+                        <td> {{object.basic_salary}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> HRA </th>
+                        <td> {{object.hra}} </td>
+                    </tr>
+
+                    <tr>  
+                        <th> Other Allowance </th>
+                        <td> {{object.other_allowance}} </td>
+                    </tr>
+                    
+                    <tr>  
+                        <th> Transportation Allowance </th>
+                        <td> {{object.transportation_allowance}} </td>
+                    </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+.table thead th a{
+    color: black !important;
+    text-decoration: none !important;
+}
+.detail-table tbody tr th{
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+select.form-select {
+    color: #000000;
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!-- partial:partials/_sidebar.html -->
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <li class="nav-item {% if is_index %} active {% endif %} ">
+        <a class="nav-link" href="{% url "main:index" %}">
+          <i class="mdi mdi-grid-large menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item nav-category">Master</li>
+
+      <li class="nav-item {% if is_department %}active{% endif %}">
+        <a class="nav-link" data-bs-toggle="collapse" href="#department" aria-expanded="false" aria-controls="department">
+          <i class="menu-icon mdi mdi-floor-plan"></i>
+          <span class="menu-title">Department</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="department">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item "> <a class="nav-link  {% if is_department %}active{% endif %}" href="{% url "employees:department_list" %}">Department List</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item  {% if is_designation %}active{% endif %}">
+        <a class="nav-link" data-bs-toggle="collapse" href="#designation" aria-expanded="false" aria-controls="designation">
+          <i class="menu-icon mdi mdi-floor-plan"></i>
+          <span class="menu-title">Designation</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="designation">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link  {% if is_designation %}active{% endif %}" href="{% url "employees:designation_list" %}">Designation List</a></li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+  <!-- partial -->
