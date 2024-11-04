@@ -60,29 +60,6 @@
   <script src="{% static 'main/assets/js/dashboard.js' %}"></script>
   <!-- <script src="{% static 'main/assets/js/Chart.roundedBarCharts.js' %}"></script> -->
   <!-- End custom js for this page-->
-  {% comment %} <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> {% endcomment %}
-
-   <script>
-    $(document).ready(function() {
-      $('#loginForm').on('submit', function(event) {
-          event.preventDefault();
-          $.ajax({
-              url: $(this).attr('action'),
-              type: 'POST',
-              data: $(this).serialize(),
-              success: function(response) {
-                  if (response.success) {
-                      window.location.href = response.redirect_url;
-                  } else {
-                      $('#loginError').text(response.error || 'Login failed. Please try again.');
-                  }
-              },
-              error: function(xhr) {
-                  $('#loginError').text('An error occurred. Please try again.');
-              }
-          });
-      });
-  });
-   </script>
+   
 </body>
 </html>
